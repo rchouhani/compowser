@@ -11,7 +11,7 @@ export default function () {
                 <Link href="/">COMPowser</Link>
             </div>
             <div className="flex flex-col sm:flex-row
-                gap-4 sm:gap-10 text-lg md:text-xl text-(--cardColor)">
+                gap-4 sm:gap-10 text-lg md:text-xl text-(--textColor)">
                 <Link href="/components.js">COMPONENTS</Link>
                 <Link href="/github.js">GITHUB</Link>
                 <Link href="/about_us.js">ABOUT <span className="text-(--logoColor)">US</span></Link>
