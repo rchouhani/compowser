@@ -25,7 +25,7 @@ export default function CardNavbarBurger() {
             <ul className="flex flex-col items-center gap-4 text-white text-lg">
               <li>
                 <Link
-                  href="/"
+                  href="#"
                   onClick={() => setIsOpen(false)}
                   className="flex items-center gap-3 hover:text-gray-300 transition-colors"
                 >
@@ -35,7 +35,7 @@ export default function CardNavbarBurger() {
               </li>
               <li>
                 <Link
-                  href="/about"
+                  href="#"
                   onClick={() => setIsOpen(false)}
                   className="flex items-center gap-3 hover:text-gray-300 transition-colors"
                 >
@@ -45,7 +45,7 @@ export default function CardNavbarBurger() {
               </li>
               <li>
                 <Link
-                  href="/gallery"
+                  href="#"
                   onClick={() => setIsOpen(false)}
                   className="flex items-center gap-3 hover:text-gray-300 transition-colors"
                 >
@@ -55,7 +55,7 @@ export default function CardNavbarBurger() {
               </li>
               <li>
                 <Link
-                  href="/contact"
+                  href="#"
                   onClick={() => setIsOpen(false)}
                   className="flex items-center gap-3 hover:text-gray-300 transition-colors"
                 >
