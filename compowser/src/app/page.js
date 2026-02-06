@@ -31,7 +31,7 @@ export default function Home() {
           TROUVEZ VOS COMPONENTS
         </h2>
 
-        <div className="flex flex-row flex-wrap items-center justify-center gap-10 mt-10 w-full p-5 text-center bg-foreground">
+        <div className="flex flex-row flex-wrap items-center justify-center gap-10 mt-10 w-full p-5 text-center">
           <Card 
             title="classic Navbar"
             component={<CardNavbar/>}
