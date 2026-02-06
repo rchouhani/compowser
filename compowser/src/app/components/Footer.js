@@ -10,7 +10,7 @@ export default function Footer(){
                 <Link href="/">COMPowser</Link>
             </div>
            
-            <p className="flex flex-row items-center justify-center gap-2"> Tous droits réservés à 
+            <p className="flex flex-row items-center justify-center gap-2 text-white"> Tous droits réservés à 
                 <a href="https://www.linkedin.com/in/camille-lebigot-pro/" className="font-bold text-(--logoColor)">Camille</a>|
                 <a href="www.linkedin.com/in/fdiarra" className="font-bold text-(--logoColor)">Faty</a>|
                 <a href="https://www.linkedin.com/in/romain-chouhani-334b1586/" className="font-bold text-(--logoColor)">Romain</a>

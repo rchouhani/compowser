@@ -6,9 +6,11 @@ export default function Card (props){
                     {props.component}
                 </div>
    
-             <div className="bg-(--borderCard) rounded-b-2xl p-2 mt-10">
+           <div className="bg-(--borderCard) rounded-b-2xl p-2 mt-10">
+                <span className="cursor-pointer transition-all hover:scale-110 hover:opacity-70 inline-block">
                     {props.code}
-                </div>
+                </span>
+            </div>
         </article>
     )
 }

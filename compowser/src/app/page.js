@@ -1,3 +1,9 @@
+
+import Card from "./components/Card";
+import CardNavbar from "./components/CardNavbar";
+import CardNavbarBurger from "./components/CardNavbarBurger";
+import CardNavbarIcon from "./components/CardNavbarIcon";
+import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 
 export default function Home() {
@@ -24,7 +30,36 @@ export default function Home() {
         <h2 className="text-2xl sm:text-3xl md:text-4xl text-transparent mt-6 [-webkit-text-stroke:1px_rgb(48,237,193,1)] text-center">
           TROUVEZ VOS COMPONENTS
         </h2>
+
+        <div className="flex flex-row flex-wrap items-center justify-center gap-10 mt-10 w-full p-5 text-center bg-foreground">
+          <Card 
+            title="classic Navbar"
+            component={<CardNavbar/>}
+            code="Affichez le code"/>
+
+          <Card 
+            title="Icons Navbar"
+            component={<CardNavbarIcon/>}
+            code="Affichez le code"/>
+
+          <Card
+            title="Burger Navbar"
+            component={<CardNavbarBurger/>}
+            code="Affichez le code" className="cursor-pointer transition-all hover:scale-110 hover:opacity-70"/>
+
+          <Card
+            title="Button"/>
+          <Card
+            title="Button"/>
+          <Card
+            title="Button"/>
+          <Card
+            title="Button"/>
+          <Card
+            title="Button"/>
+        </div>
       </section>
+      <Footer/>
     </>
   );
 }
