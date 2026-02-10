@@ -1,5 +1,6 @@
 
 import Card from "./components/Card";
+import CardButton from "./components/CardButton";
 import CardNavbar from "./components/CardNavbar";
 import CardNavbarBurger from "./components/CardNavbarBurger";
 import CardNavbarIcon from "./components/CardNavbarIcon";
@@ -48,7 +49,9 @@ export default function Home() {
             code="Affichez le code" className="cursor-pointer transition-all hover:scale-110 hover:opacity-70"/>
 
           <Card
-            title="Button"/>
+            title="Button"component={<CardButton/>}
+            code="Affichez le code" className="cursor-pointer transition-all hover:scale-110 hover:opacity-70"/>
+
           <Card
             title="Button"/>
           <Card
