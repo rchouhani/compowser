@@ -1,10 +1,12 @@
-
 import Card from "./components/Card";
 import CardButton from "./components/CardButton";
+import CardInputClassic from "./components/CardInputClassic";
+import CardInputPassword from "./components/CardInputPassword";
 import CardNavbar from "./components/CardNavbar";
 import CardNavbarBurger from "./components/CardNavbarBurger";
 import CardNavbarIcon from "./components/CardNavbarIcon";
 import Footer from "./components/Footer";
+import CardInputCyberpunk from "./components/inputCyberpunk";
 import Navbar from "./components/Navbar";
 
 export default function Home() {
@@ -17,13 +19,14 @@ export default function Home() {
         </h1>
         <div className="w-100">
           <p className="text-(--textColor) mb-4 sm:max-w-2xl md:max-w-3xl lg:w-125 text-justify">
-            Ici, tu trouveras des exemples de composants réutilisables simples et
-            basiques que tu pourras customiser toi-même dans ton code.
-            <br/>
+            Ici, tu trouveras des exemples de composants réutilisables simples
+            et basiques que tu pourras customiser toi-même dans ton code.
+            <br />
             On te donne juste un premier petit coup de pouce et à toi de jouer !
           </p>
           <p className="text-(--textColor) max-w-full sm:max-w-2xl md:max-w-3xl lg:w-125 text-justify">
-            Tu as une vision sur le composant créé et à côté, le code à récupérer.
+            Tu as une vision sur le composant créé et à côté, le code à
+            récupérer.
           </p>
         </div>
       </div>
@@ -33,36 +36,55 @@ export default function Home() {
         </h2>
 
         <div className="flex flex-row flex-wrap items-center justify-center gap-10 mt-10 w-full p-5 text-center">
-          <Card 
+          <Card
             title="classic Navbar"
-            component={<CardNavbar/>}
-            code="Affichez le code"/>
+            component={<CardNavbar />}
+            code="Affichez le code"
+          />
 
-          <Card 
+          <Card
             title="Icons Navbar"
-            component={<CardNavbarIcon/>}
-            code="Affichez le code"/>
+            component={<CardNavbarIcon />}
+            code="Affichez le code"
+          />
 
           <Card
             title="Burger Navbar"
-            component={<CardNavbarBurger/>}
-            code="Affichez le code" className="cursor-pointer transition-all hover:scale-110 hover:opacity-70"/>
+            component={<CardNavbarBurger />}
+            code="Affichez le code"
+            className="cursor-pointer transition-all hover:scale-110 hover:opacity-70"
+          />
 
           <Card
-            title="Button"component={<CardButton/>}
-            code="Affichez le code" className="cursor-pointer transition-all hover:scale-110 hover:opacity-70"/>
+            title="Button"
+            component={<CardButton />}
+            code="Affichez le code"
+            className="cursor-pointer transition-all hover:scale-110 hover:opacity-70"
+          />
 
           <Card
-            title="Button"/>
+            title="Input Classic"
+            component={<CardInputClassic />}
+            code="Affichez le code"
+          />
           <Card
-            title="Button"/>
+            title="Input Cyberpunk"
+            component={<CardInputCyberpunk />}
+            code="Affichez le code"
+          />
           <Card
-            title="Button"/>
-          <Card
-            title="Button"/>
+            title="Input Password"
+            component={<CardInputPassword />}
+            code="Affichez le code"
+          />
+
+          <Card title="Button" />
+          <Card title="Button" />
+          <Card title="Button" />
+          <Card title="Button" />
         </div>
       </section>
-      <Footer/>
+      <Footer />
     </>
   );
 }
