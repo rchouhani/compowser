@@ -26,7 +26,7 @@ export default function CardInputPassword() {
             onClick={togglePassword}
             aria-label="Afficher le mot de passe"
           >
-            <Eye />
+            <Eye size={20} className=" text-[#30EDC1]" />
           </div>
 
           <div
@@ -34,7 +34,7 @@ export default function CardInputPassword() {
             onClick={togglePassword}
             aria-label="Masquer le mot de passe"
           >
-            <EyeClosed />
+            <EyeClosed size={20} className=" text-[#30EDC1]" />
           </div>
         </div>
       </div>
