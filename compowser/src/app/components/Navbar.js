@@ -12,9 +12,9 @@ export default function () {
             </div>
             <div className="flex flex-col sm:flex-row
                 gap-4 sm:gap-10 text-lg md:text-xl text-(--textColor)">
-                <Link href="/components.js">COMPONENTS</Link>
-                <Link href="/github.js">GITHUB</Link>
-                <Link href="/about_us.js">ABOUT <span className="text-(--logoColor)">US</span></Link>
+                <Link href="/">COMPONENTS</Link>
+                <Link href="https://github.com/rchouhani/compowser/tree/main/compowser" target="__blank">GITHUB</Link>
+                <Link href="/about">ABOUT <span className="text-(--logoColor)">US</span></Link>
             </div>
         </nav>
     )
