@@ -1,7 +1,11 @@
 import Card from "./components/Card";
 import CardButton from "./components/CardButton";
+<<<<<<< HEAD
 import CardInputClassic from "./components/CardInputClassic";
 import CardInputPassword from "./components/CardInputPassword";
+=======
+import CardFooter from "./components/CardFooter";
+>>>>>>> ea7e686 (create: Card footer)
 import CardNavbar from "./components/CardNavbar";
 import CardNavbarBurger from "./components/CardNavbarBurger";
 import CardNavbarIcon from "./components/CardNavbarIcon";
@@ -42,11 +46,18 @@ export default function Home() {
             code="Affichez le code"
           />
 
+<<<<<<< HEAD
           <Card
             title="Icons Navbar"
             component={<CardNavbarIcon />}
             code="Affichez le code"
           />
+=======
+          <Card 
+            title="Mobile Navbar"
+            component={<CardNavbarIcon/>}
+            code="Affichez le code"/>
+>>>>>>> ea7e686 (create: Card footer)
 
           <Card
             title="Burger Navbar"
@@ -57,6 +68,7 @@ export default function Home() {
 
           <Card
             title="Button"
+<<<<<<< HEAD
             component={<CardButton />}
             code="Affichez le code"
             className="cursor-pointer transition-all hover:scale-110 hover:opacity-70"
@@ -67,6 +79,15 @@ export default function Home() {
             component={<CardInputClassic />}
             code="Affichez le code"
           />
+=======
+            component={<CardButton/>}
+            code="Affichez le code" className="cursor-pointer transition-all hover:scale-110 hover:opacity-70"/>
+
+          <Card
+            title="Footer classic"
+            component={<CardFooter/>}
+            code="Affichez le code"/>
+>>>>>>> ea7e686 (create: Card footer)
           <Card
             title="Input Cyberpunk"
             component={<CardInputCyberpunk />}
