@@ -26,7 +26,7 @@ export default function CardInputCyberpunk() {
         {/* Partie gauche */}
         <div
           className={`
-            h-12 w-40 bg-black transition-all duration-700
+            h-12 w-30 bg-black transition-all duration-700
             ${isVisible ? "translate-x-0" : "-translate-x-40"}
           `}
         />
@@ -34,7 +34,7 @@ export default function CardInputCyberpunk() {
         {/* Partie droite */}
         <div
           className={`
-            h-12 w-40 bg-black transition-all duration-700
+            h-12 w-30 bg-black transition-all duration-700
             ${isVisible ? "translate-x-0" : "translate-x-40"}
           `}
         />
@@ -44,10 +44,10 @@ export default function CardInputCyberpunk() {
           type="text"
           placeholder="Votre message..."
           className={`
-          absolute h-12 w-80 bg-black
+          absolute h-12 w-60 bg-black
           border border-[#30EDC1]
           text-[#30EDC1]
-          px-4 outline-none rounded-md
+          px-4 outline-none rounded-lg
           transition-opacity duration-700
           ${isVisible ? "opacity-100 glow-animate" : "opacity-0"}
         `}
