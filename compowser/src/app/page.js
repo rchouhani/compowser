@@ -6,7 +6,7 @@ import CardNavbarIcon from "./components/CardNavbarIcon";
 import CardButton from "./components/CardButton";
 import CardInputClassic from "./components/CardInputClassic";
 import CardInputPassword from "./components/CardInputPassword";
-import CardInputCyberpunk from "./components/inputCyberpunk";
+import CardInputCyberpunk from "./components/CardInputCyberpunk";
 import CardFooter from "./components/CardFooter";
 
 export default function Home() {
