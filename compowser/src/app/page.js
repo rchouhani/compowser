@@ -1,22 +1,17 @@
+
 import Card from "./components/Card";
-import CardButton from "./components/CardButton";
-<<<<<<< HEAD
-import CardInputClassic from "./components/CardInputClassic";
-import CardInputPassword from "./components/CardInputPassword";
-=======
-import CardFooter from "./components/CardFooter";
->>>>>>> ea7e686 (create: Card footer)
 import CardNavbar from "./components/CardNavbar";
 import CardNavbarBurger from "./components/CardNavbarBurger";
 import CardNavbarIcon from "./components/CardNavbarIcon";
-import Footer from "./components/Footer";
+import CardButton from "./components/CardButton";
+import CardInputClassic from "./components/CardInputClassic";
+import CardInputPassword from "./components/CardInputPassword";
 import CardInputCyberpunk from "./components/inputCyberpunk";
-import Navbar from "./components/Navbar";
+import CardFooter from "./components/CardFooter";
 
 export default function Home() {
   return (
     <>
-      <Navbar />
       <div className="flex flex-col items-start justify-start mx-4 sm:mx-8 md:mx-14 p-6 sm:p-8 md:p-10 font-sans">
         <h1 className="text-white text-3xl sm:text-4xl md:text-5xl font-semibold mb-4 sm:mb-5">
           Copiez, Collez, Codez !
@@ -46,18 +41,10 @@ export default function Home() {
             code="Affichez le code"
           />
 
-<<<<<<< HEAD
-          <Card
-            title="Icons Navbar"
-            component={<CardNavbarIcon />}
-            code="Affichez le code"
-          />
-=======
           <Card 
             title="Mobile Navbar"
             component={<CardNavbarIcon/>}
             code="Affichez le code"/>
->>>>>>> ea7e686 (create: Card footer)
 
           <Card
             title="Burger Navbar"
@@ -68,7 +55,6 @@ export default function Home() {
 
           <Card
             title="Button"
-<<<<<<< HEAD
             component={<CardButton />}
             code="Affichez le code"
             className="cursor-pointer transition-all hover:scale-110 hover:opacity-70"
@@ -79,15 +65,7 @@ export default function Home() {
             component={<CardInputClassic />}
             code="Affichez le code"
           />
-=======
-            component={<CardButton/>}
-            code="Affichez le code" className="cursor-pointer transition-all hover:scale-110 hover:opacity-70"/>
-
-          <Card
-            title="Footer classic"
-            component={<CardFooter/>}
-            code="Affichez le code"/>
->>>>>>> ea7e686 (create: Card footer)
+            
           <Card
             title="Input Cyberpunk"
             component={<CardInputCyberpunk />}
@@ -99,13 +77,16 @@ export default function Home() {
             code="Affichez le code"
           />
 
+          <Card
+            title="Footer classic"
+            component={<CardFooter/>}
+            code="Affichez le code"/>
           <Card title="Button" />
           <Card title="Button" />
           <Card title="Button" />
           <Card title="Button" />
         </div>
       </section>
-      <Footer />
     </>
   );
 }
