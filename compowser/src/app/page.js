@@ -81,6 +81,7 @@ export default function Home() {
             title="Footer classic"
             component={<CardFooter/>}
             code="Affichez le code"/>
+            
           <Card title="Button" />
           <Card title="Button" />
           <Card title="Button" />
