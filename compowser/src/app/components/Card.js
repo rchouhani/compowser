@@ -1,23 +1,28 @@
 "use client"; 
-import { useState, useEffect } from "react"; // Ajout de useEffect
-import { Eye, X } from "lucide-react"; 
+import { useState, useEffect } from "react"; 
+import { Eye, X, Copy, Check } from "lucide-react"; // Ajout de Copy et Check
 import Prism from "prismjs";
 
-// Les styles et le langage
-// import "prismjs/themes/prism-tomorrow.css";
+import "prismjs/themes/prism-tomorrow.css";
 import "prismjs/components/prism-jsx";
 import "prismjs/themes/prism-okaidia.css";
 
 export default function Card(props) { 
     const [isOpen, setIsOpen] = useState(false); 
+    const [copied, setCopied] = useState(false); // État pour le feedback de copie
 
-    // Cette fonction surveille l'ouverture de la modale
+    // Fonction de copie
+    const handleCopy = () => {
+        navigator.clipboard.writeText(props.code);
+        setCopied(true);
+        setTimeout(() => setCopied(false), 2000); // Reset après 2s
+    };
+
     useEffect(() => {
         if (isOpen) {
-            // Prism analyse tout le code présent dans la page
             Prism.highlightAll();
         }
-    }, [isOpen]); // Se déclenche dès que isOpen change de valeur
+    }, [isOpen]); 
 
     return ( 
         <> 
@@ -48,7 +53,26 @@ export default function Card(props) {
                         {props.component} 
                     </div> 
 
-                    {/* On ajoute la classe language-jsx pour que Prism sache quoi colorier */}
+                    {/* AJOUT DU BOUTON COPIER */}
+                    <div className="flex justify-end mb-2">
+                        <button 
+                            onClick={handleCopy}
+                            className="flex items-center gap-2 text-xs font-bold py-1 px-3 rounded-lg bg-gray-800 text-white hover:bg-gray-700 transition-all active:scale-95"
+                        >
+                            {copied ? (
+                                <>
+                                    <span className="text-[#30EDC1]">Copié !</span>
+                                    <Check size={14} className="text-[#30EDC1]" />
+                                </>
+                            ) : (
+                                <>
+                                    <span>Copier</span>
+                                    <Copy size={14} />
+                                </>
+                            )}
+                        </button>
+                    </div>
+
                     <pre className="rounded-lg overflow-auto max-h-[60vh] text-left whitespace-pre font-mono custom-scrollbar"> 
                         <code className="language-jsx">{props.code}</code> 
                     </pre> 
