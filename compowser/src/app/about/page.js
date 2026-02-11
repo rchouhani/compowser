@@ -52,12 +52,13 @@ export default function About() {
                     </p>
                     <p>
                         On passait alors un temps fou à rouvrir nos anciens dépôts GitHub en se demandant :  
+                    </p>
                         <br/>  
-                        <br/>  
-                        <p className="italic my-4 text-center">
+                        <p className="italic">
                             "Attends, comment j'avais codé ça déjà ?"
                         </p>
                         <br/>
+                    <p>
                         On s'est rendu compte que le copier-coller sauvage d'un projet à l'autre n'était ni efficace, ni satisfaisant. 
                         Il nous manquait un outil simple pour centraliser, organiser et réutiliser nos composants favoris sans perdre le fil de notre créativité.
                     </p>
@@ -71,9 +72,6 @@ export default function About() {
                         jamais repartir de zéro.
                     </p>
                 </article>
-
-                
-
             </div>
 
             <div className="flex flex-row justify-center items-center gap-5 ">

@@ -12,10 +12,9 @@ export default function Article({ image, name, text }) {
         />
       </div>
 
-      <h2 className="uppercase font-black py-3 px-5 text-(--textColor) text-center">
+      <h2 className="uppercase font-black py-3 px-5 text-(--logoColor) text-center">
         {name}
       </h2>
-
       <p className="px-5 pb-5 text-justify text-(--textColor)">
         {text}
       </p>
