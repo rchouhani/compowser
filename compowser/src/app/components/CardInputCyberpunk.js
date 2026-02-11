@@ -44,7 +44,7 @@ export default function CardInputCyberpunk() {
           type="text"
           placeholder="Votre message..."
           className={`
-          absolute h-12 w-60 bg-black
+          absolute h-12 w-60 bg-(--background)
           border border-[#30EDC1]
           text-[#30EDC1]
           px-4 outline-none rounded-lg
