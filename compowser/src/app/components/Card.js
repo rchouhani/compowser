@@ -49,7 +49,7 @@ export default function Card(props) {
                         <X size={22} /> 
                     </button> 
                         
-                    <div className="m-5 flex justify-center"> 
+                    <div className="m-5 p-3"> 
                         {props.component} 
                     </div> 
 
@@ -61,8 +61,8 @@ export default function Card(props) {
                         >
                             {copied ? (
                                 <>
-                                    <span className="text-[#30EDC1]">Copié !</span>
-                                    <Check size={14} className="text-[#30EDC1]" />
+                                    <span className="text-(--logoColor)">Copié !</span>
+                                    <Check size={14} className="text-(--logoColor)" />
                                 </>
                             ) : (
                                 <>
