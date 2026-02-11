@@ -31,6 +31,24 @@
     --foreground: #ededed;
   }
 }
+/* Ciblage spécifique de la barre dans le composant de code */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 8px;   /* Largeur pour le scroll vertical */
+  height: 8px;  /* Hauteur pour le scroll horizontal */
+  display: block; /* Force l'affichage */
+}
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #30EDC1; /* Ton vert Teal */
+  border-radius: 10px;
+  border: 2px solid #1a1a1a; /* Pour créer un petit espace propre */
+}
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #44a68f;
+}
 
 body {
   background: var(--background);
