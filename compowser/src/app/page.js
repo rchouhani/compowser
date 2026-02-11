@@ -8,6 +8,7 @@ import CardInputClassic from "./components/CardInputClassic";
 import CardInputPassword from "./components/CardInputPassword";
 import CardInputCyberpunk from "./components/CardInputCyberpunk";
 import CardFooter from "./components/CardFooter";
+import { codeSnippets } from "./data/componentsData";
 
 export default function Home() {
   return (
@@ -27,6 +28,10 @@ export default function Home() {
             Tu as une vision sur le composant créé et à côté, le code à
             récupérer.
           </p>
+          {/* Paragraphe optionnel */}
+          <p className="text-sm italic border-l-2 border-[#30EDC1] pl-4 mt-4 text-(--textColor)">
+            Composants en JSX pour Next.js/React avec Tailwind CSS, conçus avec une charte graphique unifiée pour une intégration harmonieuse.
+          </p>
         </div>
       </div>
       <section className="flex flex-col items-center px-4">
@@ -34,58 +39,58 @@ export default function Home() {
           TROUVEZ VOS COMPONENTS
         </h2>
 
-        <div className="flex flex-row flex-wrap items-center justify-center gap-10 mt-10 w-full p-5 text-center">
+          <div className="flex flex-row flex-wrap items-center justify-center gap-10 mt-10 w-full p-5 text-center">
           <Card
-            title="classic Navbar"
+            title="Classic Navbar"
             component={<CardNavbar />}
-            code="Affichez le code"
+            code={codeSnippets.CardNavbar}
           />
 
           <Card 
             title="Mobile Navbar"
             component={<CardNavbarIcon/>}
-            code="Affichez le code"/>
+            code={codeSnippets.CardNavbarIcon}
+          />
 
           <Card
             title="Burger Navbar"
             component={<CardNavbarBurger />}
-            code="Affichez le code"
-            className="cursor-pointer transition-all hover:scale-110 hover:opacity-70"
+            code={codeSnippets.CardNavbarBurger}
           />
 
           <Card
             title="Button"
             component={<CardButton />}
-            code="Affichez le code"
-            className="cursor-pointer transition-all hover:scale-110 hover:opacity-70"
+            code={codeSnippets.cardButton} 
           />
 
           <Card
             title="Input Classic"
             component={<CardInputClassic />}
-            code="Affichez le code"
+            code={codeSnippets.CardInputClassic}
           />
             
           <Card
             title="Input Cyberpunk"
             component={<CardInputCyberpunk />}
-            code="Affichez le code"
-          />
-          <Card
-            title="Input Password"
-            component={<CardInputPassword />}
-            code="Affichez le code"
+            code={codeSnippets.CardInputCyberpunk}
           />
 
           <Card
-            title="Footer classic"
+            title="Input Password"
+            component={<CardInputPassword />}
+            code={codeSnippets.cardInputPassword}
+          />
+
+          <Card
+            title="Footer Classic"
             component={<CardFooter/>}
-            code="Affichez le code"/>
-            
-          <Card title="Button" />
-          <Card title="Button" />
-          <Card title="Button" />
-          <Card title="Button" />
+            code={codeSnippets.CardFooter}
+          />
+
+          {/* Cartes vides à remplir plus tard */}
+          <Card title="Prochainement" />
+          <Card title="Prochainement" />
         </div>
       </section>
     </>
