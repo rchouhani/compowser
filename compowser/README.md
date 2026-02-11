@@ -35,7 +35,7 @@ Compowser combine **praticité, simplicité et productivité**, tout en restant 
 1. Cloner le projet :
 
 ```bash
-git clone https://github.com/<votre-utilisateur>/compowser.git
+git clone git clone git@github.com:rchouhani/compowser.git
 ```
 
 2. Installer les dépendances :
