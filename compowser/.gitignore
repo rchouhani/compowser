@@ -1,3 +1,20 @@
 .DS_Store
 node_modules/
 .next/
+# Build et Dossiers de sortie
+.next/
+out/
+build/
+
+# Fichiers système (ceux qui t'ont embêté)
+.DS_Store
+*.local
+
+# Environnement (TRÈS IMPORTANT : pour ne pas envoyer tes mots de passe/clés API)
+.env
+.env*.local
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
