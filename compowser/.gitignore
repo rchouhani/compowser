@@ -10,7 +10,7 @@
 !.yarn/releases
 !.yarn/versions
 
-../.DS_Store
+**/.DS_Store
 # testing
 /coverage
 
