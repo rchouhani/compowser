@@ -33,19 +33,16 @@ export default function About() {
 ]
     return(
         <section>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl text-transparent mt-6 [-webkit-text-stroke:1px_rgb(48,237,193,1)] text-center">
-                La COMPo
-            </h2>
             <div className="text-justify w-full max-w-4xl text-(--textColor) px-5 md:px-10 my-10">
                 <article className="mb-5">
-                    <h3 className="uppercase text-(--logoColor)">L'histoire derrière Compowser</h3>
+                    <h3 className="uppercase text-white">L'histoire derrière Compowser</h3>
                     <p>Tout commence en janvier 2025, sur les bancs de l'école Ada Tech School. C'est là que nos trois chemins se sont croisés, 
                         portés par une ambition commune : réussir notre reconversion professionnelle dans le monde du développement.
                     </p>
                 </article>
     
                 <article className="mb-5">
-                    <h3 className="uppercase text-(--logoColor)">Le déclic</h3>
+                    <h3 className="uppercase text-white">Le déclic</h3>
                     <p>
                         En tant que jeunes développeurs, nous avons rapidement remarqué un schéma répétitif. À chaque nouveau projet, nous nous 
                         retrouvions face aux mêmes besoins : une barre de navigation, un bouton spécifique, un formulaire de contact...
@@ -65,7 +62,7 @@ export default function About() {
                 </article>
 
                 <article className="mb-5">
-                    <h3 className="uppercase text-(--logoColor)">La naissance de compowser</h3>
+                    <h3 className="uppercase text-white">La naissance de compowser</h3>
                     <p>
                         C'est de ce besoin de clarté qu'est né Compowser. Plus qu'un simple outil, c'est notre réponse collaborative pour gagner en productivité. 
                         Nous avons voulu créer l'outil que nous aurions aimé avoir dès notre premier jour de formation : une bibliothèque intelligente pour ne plus 
@@ -74,7 +71,11 @@ export default function About() {
                 </article>
             </div>
 
-            <div className="flex flex-col md:flex-row justify-center items-center gap-5 px-5">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl text-transparent m-6 [-webkit-text-stroke:1px_rgb(48,237,193,1)] text-center">
+                La COMPo
+            </h2>
+
+            <div className="flex flex-row flex-wrap justify-center items-stretch gap-5 px-5 max-w-7xl mx-auto">
                 {members.map(member => (
                     <Article key={member.id} {...member} />
                 ))}
