@@ -13,9 +13,8 @@ import { codeSnippets } from "./data/componentsData";
 export default function Home() {
   return (
     <>
-      <div className="flex flex-col items-start justify-start mx-4 sm:mx-8 md:mx-14 p-4 sm:p-6 md:p-8 lg:p-10 font-sans">
-        <h1 className="text-white text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold mb-3 sm:mb-4 md:mb-5">
-          Copiez, Collez, Codez !
+      <div className="flex flex-col items-start justify-start mx-4 sm:mx-8 md:mx-14 p-4 sm:p-6 md:p-8 lg:p-15 font-sans">
+<h1 className="text-white text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold mb-3 sm:mb-4 md:mb-5">          Copiez, Collez, Codez !
         </h1>
         <div className="w-full">
           <p className="text-(--textColor) mb-4 max-w-full sm:max-w-2xl md:max-w-3xl lg:w-125 text-justify text-sm sm:text-base">

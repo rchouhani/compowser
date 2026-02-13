@@ -14,10 +14,10 @@ export default function Article({ image, name, text }) {
       </div>
 
       <div className="flex flex-col">
-        <h2 className="uppercase font-black py-3 px-5 text-(--logoColor) text-center text-sm sm:text-base">
+        <h2 className="uppercase font-bold py-3 px-5 text-(--logoColor) text-center text-lg sm:text-xl tracking-widest">
           {name}
         </h2>
-        <p className="px-5 pb-5 text-justify text-(--textColor) text-sm sm:text-base">
+        <p className="px-5 pb-3 text-(--textColor) text-sm sm:text-base leading-relaxed tracking-wide text-left whitespace-pre-line opacity-90">
           {text}
         </p>
       </div>
