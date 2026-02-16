@@ -10,9 +10,9 @@ export default function Footer(){
                 <Link href="/">COMPowser</Link>
             </div>
            
-            <p className="flex flex-row items-center justify-center gap-2 text-white"> Tous droits réservés à 
-                <a href="https://www.linkedin.com/in/camille-lebigot-pro/" target="__blank" className="font-bold text-(--logoColor)">Camille</a>|
-                <a href="https://www.linkedin.com/in/fdiarra/" target="__blank" className="font-bold text-(--logoColor)">Faty</a>|
+            <p className="flex flex-col md:flex-row md:items-center justify-center gap-2 text-white"> Tous droits réservés à 
+                <a href="https://www.linkedin.com/in/camille-lebigot-pro/" target="__blank" className="font-bold text-(--logoColor)">Camille</a>
+                <a href="https://www.linkedin.com/in/fdiarra/" target="__blank" className="font-bold text-(--logoColor)">Faty</a>
                 <a href="https://www.linkedin.com/in/romain-chouhani-334b1586/" target="__blank" className="font-bold text-(--logoColor)">Romain</a>
             </p>
 
