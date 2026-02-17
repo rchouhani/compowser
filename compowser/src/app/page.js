@@ -9,6 +9,7 @@ import CardInputPassword from "./components/CardInputPassword";
 import CardInputCyberpunk from "./components/CardInputCyberpunk";
 import CardFooter from "./components/CardFooter";
 import { codeSnippets } from "./data/componentsData";
+import CardCard from "./components/CardCard";
 
 export default function Home() {
   return (
@@ -89,7 +90,11 @@ export default function Home() {
           />
 
           {/* Cartes vides à remplir plus tard */}
-          <Card title="Prochainement" />
+           <Card
+            title="Carte"
+            component={<CardCard />}
+            code={codeSnippets.CardCard}
+          />
           <Card title="Prochainement" />
         </div>
       </section>
