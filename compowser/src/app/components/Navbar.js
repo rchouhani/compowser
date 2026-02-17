@@ -8,7 +8,7 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="relative bg-background px-6 py-6">
+<nav className="fixed top-0 left-0 w-full z-50 bg-background px-6 py-6 border-b border-[#30EDC1]/10">
       <div className="flex justify-between items-center">
         <div
           className="text-2xl md:text-3xl font-light tracking-widest 
