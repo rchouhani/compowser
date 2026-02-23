@@ -121,13 +121,6 @@ export default function Home() {
               </button>
             </div>
           )}
-
-          {searchQuery === "" && (
-            <>
-              <Card title="Prochainement" />
-              <Card title="Prochainement" />
-            </>
-          )}
         </div>
       </section>
     </>
