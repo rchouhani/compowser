@@ -6,10 +6,10 @@ import CardInputClassic from "../components/CardInputClassic";
 import CardInputPassword from "../components/CardInputPassword";
 import CardInputCyberpunk from "../components/CardInputCyberpunk";
 import CardFooter from "../components/CardFooter";
-import CardCard from "../components/CardCard"; 
+import CardCard from "../components/CardCard";
 import CardSimpleLoader from "../components/CardSimpleLoader";
 import CardDotsLoader from "../components/CardDotsLoader";
-import CardSpinnerLoader from "../components/CardSpinnerLoader"
+import CardSpinnerLoader from "../components/CardSpinnerLoader";
 
 export const allComponents = [
   {
@@ -27,7 +27,7 @@ export const allComponents = [
       <Link href="#">À propos</Link>
     </div>
   </div>
-</nav>`
+</nav>`,
   },
   {
     id: 2,
@@ -39,7 +39,7 @@ export const allComponents = [
     <Link href="#"><Github/></Link>
     <Link href="#"><Search/></Link>
   </div>
-</nav>`
+</nav>`,
   },
   {
     id: 3,
@@ -50,41 +50,41 @@ export const allComponents = [
     <p className="text-white font-bold">COMPowser</p>
     <button className="text-white"><Menu /></button>
   </div>
-</div>`
+</div>`,
   },
   {
     id: 4,
     title: "Bouton",
     component: <CardButton />,
     code: `<button className="btn text-white text-xl bg-(--logoColor) hover:bg-[#44a68f] transition-colors pt-1 pb-1 pl-5 pr-5 rounded-md cursor-pointer">
-  Button
-</button>`
+  Bouton
+</button>`,
   },
   {
     id: 5,
     title: "Input Classic",
     component: <CardInputClassic />,
-    code: `<input className="w-100ovh border-solid border-2 border-[#30EDC1] rounded-lg p-2" type="text" placeholder=" Texte" />`
+    code: `<input className="w-100ovh border-solid border-2 border-[#30EDC1] rounded-lg p-2" type="text" placeholder=" Texte" />`,
   },
   {
     id: 6,
     title: "Input Cyberpunk",
     component: <CardInputCyberpunk />,
-    code: `<input type="text" placeholder="Votre message..." className="h-12 w-80 bg-black border border-[#30EDC1] text-[#30EDC1] px-4 outline-none rounded-md shadow-[0_0_15px_#30EDC1]"/>`
+    code: `<input type="text" placeholder="Votre message..." className="h-12 w-80 bg-black border border-[#30EDC1] text-[#30EDC1] px-4 outline-none rounded-md shadow-[0_0_15px_#30EDC1]"/>`,
   },
   {
     id: 7,
     title: "Input Password",
     component: <CardInputPassword />,
-    code: `<input type={showPassword ? "text" : "password"} className="w-60 border-solid border-2 border-[#30EDC1] text-[#30EDC1] rounded-lg p-2 bg-transparent outline-none" />`
+    code: `<input type={showPassword ? "text" : "password"} className="w-60 border-solid border-2 border-[#30EDC1] text-[#30EDC1] rounded-lg p-2 bg-transparent outline-none" />`,
   },
   {
     id: 8,
     title: "Simple Loader",
-    component: <CardSimpleLoader/>,
+    component: <CardSimpleLoader />,
     code: `<div className="flex items-center justify-center h-full">
     <div className="w-8 h-8 border-4 border-gray-300 border-t-(--logoColor) rounded-full animate-spin"></div>
-</div>`
+</div>`,
   },
   {
     id: 10,
@@ -99,13 +99,13 @@ export const allComponents = [
           style={{ animationDelay: \`\${delay}s\`}}
         />
       ))}
-    </section>`
+    </section>`,
   },
   {
     id: 11,
-  title: "Spinner Loader",
-  component: <CardSpinnerLoader />,
-  code: `
+    title: "Spinner Loader",
+    component: <CardSpinnerLoader />,
+    code: `
 <div className="flex items-center justify-center w-full h-full">
   <div className="relative w-10 h-10">
     {[...Array(10)].map((_, i) => (
@@ -119,7 +119,7 @@ export const allComponents = [
       />
     ))}
   </div>
-</div>`
+</div>`,
   },
   {
     id: 15,
@@ -127,7 +127,7 @@ export const allComponents = [
     component: <CardFooter />,
     code: `<footer className="flex flex-col items-start text-left w-full bg-(--logoColor) p-3">
   <p className="text-white font-bold mb-3">COMPowser</p>
-</footer>`
+</footer>`,
   },
   {
     id: 16,
@@ -141,6 +141,6 @@ export const allComponents = [
     <h2 className="uppercase font-black py-3 px-5 text-(--logoColor) text-center">Titre</h2>
     <p className="px-5 pb-5 text-center text-(--textColor) flex-grow">Exemple de carte.</p>
   </div>
-</div>`
+</div>`,
   },
 ];
