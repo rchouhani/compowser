@@ -44,7 +44,7 @@ export default function Home() {
             récupérer.
           </p>
           <p className="text-xs sm:text-sm italic border-l-2 border-[#30EDC1] pl-3 sm:pl-4 mt-4 text-(--textColor) max-w-full">
-            Composants en JSX pour Next.js/React avec Tailwind CSS, conçus avec une charte graphique unifiée.
+            Composants en JSX pour Next.js/React avec Tailwind CSS <br /> conçus avec une charte graphique unifiée.
           </p>
         </div>
       </div>
