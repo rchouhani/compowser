@@ -34,7 +34,7 @@ export default function About() {
     return(
         <section>
 <div className="flex flex-col items-start justify-start mx-4 sm:mx-8 md:mx-14 p-4 sm:p-6 md:p-8 lg:p-10 font-sans">                
-    <div className="w-full max-w-4xl text-justify text-(--textColor)">
+    <div className="w-full max-w-4xl mt-25 *:text-justify text-(--textColor)">
         <article className="mb-12">
             <h3 className="text-white text-xl sm:text-2xl md:text-3xl lg:text-4xl font-semibold mb-3 sm:mb-4 md:mb-5">L'histoire derrière Compowser</h3>
             <p className="leading-relaxed text-sm sm:text-base">
