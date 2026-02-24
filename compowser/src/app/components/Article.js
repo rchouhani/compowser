@@ -1,9 +1,10 @@
-
 import Image from "next/image";
+import ButtonPortfolio from "./ButtonPortfolio";
 
-export default function Article({ image, name, text }) {
+export default function Article({ image, name, text, lien }) {
   return (
     <article className="border-2 rounded-2xl w-full sm:w-[calc(50%-0.625rem)] lg:w-[calc(33.333%-0.834rem)] border-(--borderCard) flex flex-col overflow-hidden">
+      
       <div className="relative h-48 sm:h-56 lg:h-64 w-full shrink-0">
         <Image
           src={image}
@@ -17,10 +18,20 @@ export default function Article({ image, name, text }) {
         <h2 className="uppercase font-bold py-3 px-5 text-(--logoColor) text-center text-lg sm:text-xl tracking-widest">
           {name}
         </h2>
+
         <p className="px-5 pb-3 text-(--textColor) text-sm sm:text-base leading-relaxed tracking-wide text-left whitespace-pre-line opacity-90">
           {text}
         </p>
+
+        {lien && (
+          <ButtonPortfolio
+            lien={lien}
+            label="Portfolio"
+            className="bg-(--logoColor) text-center text-black p-2 rounded-lg m-10"
+          />
+        )}
       </div>
+
     </article>
   );
 }
