@@ -1,8 +1,6 @@
 
 # Compowser
 
-[Compowser](https://compowser.vercel.app)
-
 ## 🎯 Concept
 
 Compowser est une **bibliothèque de composants web réutilisables**, pensée pour les développeurs juniors et les équipes en apprentissage.  
@@ -10,6 +8,8 @@ Compowser est une **bibliothèque de composants web réutilisables**, pensée po
 Son objectif est simple : **ne jamais repartir de zéro**. Fini les recherches dans d’anciens projets ou le copier-coller sauvage : ici, tous vos composants favoris sont centralisés, organisés et prêts à l’emploi.  
 
 Compowser combine **praticité, simplicité et productivité**, tout en restant un projet collaboratif pour apprendre et partager.
+
+Site en ligne : [Compowser](https://compowser.vercel.app)
 
 ---
 
