@@ -1,6 +1,8 @@
 
 # Compowser
 
+[Compowser](https://compowser.vercel.app)
+
 ## 🎯 Concept
 
 Compowser est une **bibliothèque de composants web réutilisables**, pensée pour les développeurs juniors et les équipes en apprentissage.  
@@ -26,38 +28,4 @@ Compowser combine **praticité, simplicité et productivité**, tout en restant 
 - **Frontend :** React / Next.js  
 - **Styling :** Tailwind CSS  
 - **Gestion des assets :** Public folder (`/public/assets`)  
-- **Versioning :** Git / GitHub  
-
----
-
-## 🚀 Installation
-
-1. Cloner le projet :
-
-```bash
-git clone git clone git@github.com:rchouhani/compowser.git
-```
-
-2. Installer les dépendances :
-    cd compowser
-    npm install
-
-3. Lancer le projet en local :
-    npm run dev
-
-Ouvrir http://localhost:3000 dans votre navigateur
-
-
-
-
-First, run the development server:
-
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- **Versioning :** Git / GitHub
